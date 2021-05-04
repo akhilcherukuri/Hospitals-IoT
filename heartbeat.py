@@ -45,7 +45,7 @@ def read_temp():
     file.write( str(temp_c) )
     file.flush()
     # print(temp_c)
-    # return temp_c
+    return temp_c
 
 # Initialize I2C (SMBus)
 bus = smbus.SMBus(i2c_ch)
@@ -128,12 +128,11 @@ def read_pulse():
               runningTotal /= len(rate)           # average the IBI values
  
               BPM = int(60000/runningTotal)      
-              temperature = read_temp()
+              # temperature = read_temp()
               # print(str(BPM))
               file = open(filename, "w")
               file.write( str(BPM) )
               file.flush()
-
 
             if Signal < th and Pulse == True:
                 Pulse = False;
@@ -149,7 +148,7 @@ def read_pulse():
                 lastBeatTime = sampleCounter
                 firstBeat = 0                    
                 secondBeat = 0    
-                temperature = read_temp()              
+                # temperature = read_temp()              
                 # print("0")
                 file = open(filename, "w")
                 file.write("0")
