@@ -45,7 +45,7 @@ def read_temp():
     file.write( str(temp_c) )
     file.flush()
     # print(temp_c)
-    return temp_c
+    # return temp_c
 
 # Initialize I2C (SMBus)
 bus = smbus.SMBus(i2c_ch)

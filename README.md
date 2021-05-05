@@ -1,7 +1,10 @@
-# Remote Monitoring and Operations Management for Hospitals [In Progress]
+# Remote Monitoring and Operations Management for Hospitals
 
 ## Project Members
-Akhil Cherukuri, Yuming Cheng, Ellis Makwana, Truonghuy Mai
+* Akhil Cherukuri
+* Yuming Cheng
+* Ellis Makwana
+* Truonghuy Mai
 
 ## Abstract 
 The Internet of Things(IoT) has set a milestone in the digital era, increasing in almost every sector, from commercial to educational. The concept is taking over due to its simplicity yet accuracy. In such systems, hardware, software, and services are perfectly blended to extract intelligence from data sets. These intelligent objects need minimal human intervention, and hence this technology is now slowly pacing towards taking over the health sector. 

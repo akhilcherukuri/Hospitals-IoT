@@ -51,16 +51,15 @@ def configureLogging():
     logger.addHandler(streamHandler)
 
 
-# host = "a1ii3qlfr1qukw-ats.iot.us-east-1.amazonaws.com"
-#host = "a2xz6bh1uzu45m-ats.iot.us-west-2.amazonaws.com"
-host = "a2xz6bh1uzu45m-ats.iot.us-west-2.amazonaws.com"
-#certPath = "/home/pi/iotproject/aws-iot-device-sdk-python/cmpe295/certs/"
-certPath = "/home/pi/certs_east/certs_true/"
-# clientId = "iot295b_thing"
-clientId = "masterproject"
-# topic = "iot/temperature"
-thingName = "masterproject"
-#thingName = "iot295b_thing"
+# host = "a2xz6bh1uzu45m-ats.iot.us-west-2.amazonaws.com"
+# certPath = "/home/pi/certs_east/certs_true/"
+# clientId = "masterproject"
+# thingName = "masterproject"
+certPath = "/home/pi/certs_east/"
+host = "a1ii3qlfr1qukw-ats.iot.us-east-1.amazonaws.com"
+clientId = "iot295b_thing"
+topic = "iot/temperature"
+thingName = "iot295b_thing"
 
 filename = "/home/pi/iotproject/aws-iot-device-sdk-python/cmpe295/pulse_reading.txt"
 filename2 = "/home/pi/iotproject/aws-iot-device-sdk-python/cmpe295/temp_reading.txt"
@@ -94,6 +93,6 @@ while True:
     print("\n", JSONPayload,"\n")
     deviceShadowHandler.shadowUpdate(JSONPayload, customShadowCallback_Update, 5)
     loopCount += 1
-    time.sleep(10)
+    time.sleep(1)
 
 
