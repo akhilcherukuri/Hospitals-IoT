@@ -1,0 +1,64 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hospital project",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetTemperature",
+                    "slots": [],
+                    "samples": [
+                        "whats the temperature",
+                        "whats the current temperature",
+                        "what is the temperature",
+                        "what is the current temperature",
+                        "tell me the temperature",
+                        "tell me the current temperature"
+                    ]
+                },
+                {
+                    "name": "GetPulse",
+                    "slots": [],
+                    "samples": [
+                        "whats the pulse",
+                        "whats the current pulse",
+                        "what is the humidity",
+                        "what is the current pulse",
+                        "tell me the pulse",
+                        "tell me the pulse rate"
+                    ]
+                },
+                {
+                    "name": "GetBoth",
+                    "slots": [],
+                    "samples": [
+                        "whats both",
+                        "tell me both",
+                        "get both",
+                        "whats the readings"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
